@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-gradient__navbar {
+    @apply w-full bg-transparent bg-gradient-to-tl from-[#6cd0ff] via-indigo-400 to-[#1c2e4c] shadow-lg border-b border-slate-800 rounded-b
+}
+
+.text-gradient__navlinks {
+    @apply text-lg font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-slate-600 via-slate-800 to-slate-950 border border-indigo-700 py-2 px-4 rounded-full
+}
+
+.bg-content__main {
+    @apply w-full bg-transparent bg-gradient-to-bl min-h-screen from-[#6cd0ff] via-indigo-400 to-[#1c2e4c]
+}
+
+.form__search {
+    @apply px-2 flex flex-row-reverse items-center justify-center relative
+}
+
+.form_input__search {
+    @apply inline-block p-2 px-6 bg-transparent border border-slate-700 placeholder:italic rounded-full placeholder:text-slate-900 placeholder:tracking-widest focus:outline-none focus:italic focus:tracking-widest active:transition-all active:ease-in-out active:duration-1000
+}
